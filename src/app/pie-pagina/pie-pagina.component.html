@@ -1,0 +1,173 @@
+<br><br><br>
+<div>
+  <table class="table align-middle mb-0 bg-white">
+  <thead class="bg-light">
+    <tr>
+      <th>Nombre</th>
+      <th>Ocupacion</th>
+      <th>Estado</th>
+      <th>acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <img
+              src="assets/marge.jpeg"
+              alt=""
+              style="width: 85px; height: 85px"
+              class="rounded-circle"
+              />
+          <div class="ms-3">
+            <p class="fw-bold mb-1" id="nom1">John Salchichon</p>
+            <p class="text-muted mb-0" id="cor1">john.sal@gmail.com</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <p class="fw-normal mb-1" id="ocu1">ingeniero de software</p>
+        <p class="text-muted mb-0" id="dep1">departamento IT</p>
+      </td>
+      <td>
+        <span id="estado1"style="padding: 7px;border-radius:15px;background-color: indianred; color: white;">Desconectado</span>
+      </td>
+      <td>
+        <button class="ghost-roun" id="btnModal" onclick="cargar('nom1','cor1','ocu1','dep1','estado1');">Editar
+        </button>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <img
+          src="assets/esponja.jpeg"
+          class="rounded-circle"
+          alt=""
+          style="width: 85px; height: 85px"/>
+          <div class="ms-3">
+            <p class="fw-bold mb-1" id="nom2">Matt Enme</p>
+            <p class="text-muted mb-0" id="cor2">mattNos@gmail.com</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <p class="fw-normal mb-1" id="ocu2">Consultor</p>
+        <p class="text-muted mb-0" id="dep2">Finanzas</p>
+      </td>
+      <td>
+        <span class="estado" id="estado2"style="padding: 7px;border-radius:15px;background-color: limegreen; color: white;">Activo</span>
+      </td>
+      <td>
+        <button class="ghost-roun" id="btnModal" onclick="cargar('nom2','cor2','ocu2','dep2','estado2');">
+          Editar
+        </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <img
+          src="assets/peppa.jpeg"
+          class="rounded-circle"
+          alt=""
+          style="width: 85px; height: 85px"
+              />
+          <div class="ms-3">
+            <p class="fw-bold mb-1" id="nom3">Armando Bronca</p>
+            <p class="text-muted mb-0"id="cor3">ArmaBro@gmail.com</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <p class="fw-normal mb-1" id="ocu3">Encargado</p>
+        <p class="text-muted mb-0"id="dep3">Recursos Humanos</p>
+      </td>
+      <td>
+        <span id="estado3"style="padding: 7px;border-radius:15px;background-color: #4EBDE2; color: white;">Incorporandose</span>
+      </td>
+      <td>
+        <button class="ghost-roun" id="btnModal" onclick="cargar('nom3','cor3','ocu3','dep3','estado3');">Editar
+        </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <img
+              src="assets/abuela.jpg"
+              alt=""
+              style="width: 85px; height: 85px"
+              class="rounded-circle"
+              />
+          <div class="ms-3">
+            <p class="fw-bold mb-1" id="nom4">Elton Tito</p>
+            <p class="text-muted mb-0"id="cor4">Eltonton@gmail.com</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <p class="fw-normal mb-1" id="ocu4">Desarrolador</p>
+        <p class="text-muted mb-0" id="dep4">UI/UX</p>
+      </td>
+      <td>
+        <span id="estado4"style="padding: 7px;border-radius:15px;background-color: limegreen; color: white;">Activo</span>
+      </td>
+      <td>
+        <button class="ghost-roun" id="btnModal" onclick="cargar('nom4','cor4','ocu4','dep4','estado4');">Editar
+        </button>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <div class="d-flex align-items-center">
+          <img
+              src="assets/batman.jpeg"
+              alt=""
+              style="width: 85px; height: 85px"
+              class="rounded-circle"
+              />
+          <div class="ms-3">
+            <p class="fw-bold mb-1" id="nom5">Elisen Siando</p>
+            <p class="text-muted mb-0" id="cor5">Elisia@gmail.com</p>
+          </div>
+        </div>
+      </td>
+      <td>
+        <p class="fw-normal mb-1" id="ocu5">Consultor</p>
+        <p class="text-muted mb-0" id="dep5">Marketing</p>
+      </td>
+      <td>
+        <span id="estado5"style="padding: 7px;border-radius:15px;background-color: indianred; color: white;">Desconectado</span>
+      </td>
+      <td>
+        <button class="ghost-roun" id="btnModal" onclick="cargar('nom5','cor5','ocu5','dep5','estado5');">Editar
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<dialog id="modal3"class="modales">
+  <h2>Editor</h2>
+  <p>Nombre:<input type="text" id="nuevoN" class="nuevoN" ></p>
+  <p>Email:<input type="email" id="nEma"class="nEma"pattern="@--.com"></p>
+  <p>Ocupacion:<input type="text"id="ocupacion" class ="ocupacion"></p>
+  <p>Departamento:<input type="text" id="departa" class ="departa" ></p>
+  <p>Estado :
+       <select  id="esta">
+         <option class="dire" selected value="Activo">Activo</option>
+         <option class="dire" value="Incorporandose">Incorporandose</option>
+         <option class="dire" value="Desconectado">Desconectado</option>
+         <option class="dire" value="Desconocido">Desconocido</option>
+       </select>
+       </p>
+  <button onclick="window.modal3.close();"style="padding: 7px;border-radius:15px;background-color: #4EBDE2; color: white;">cancelar</button>
+  <button id="bot"style="padding: 7px;border-radius:15px;background-color: #4EBDE2; color: white;" >cambiar</button>
+</dialog>
+<br>

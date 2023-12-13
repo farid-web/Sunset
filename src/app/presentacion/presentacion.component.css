@@ -1,0 +1,18 @@
+.ejemplo{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+  }
+  .thum{
+    flex: 15%;
+    border-radius: 5px;
+    background-image: url('src/assets/fondo.jpg');
+  }
+  .conten{
+    background: linear-gradient(to right,#21233d, #284872, #284ca9,#4EBDE2,skyblue);
+    color: #ffede7;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 55%;
+  }

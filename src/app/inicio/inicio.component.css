@@ -1,0 +1,16 @@
+.infor{
+    margin-right: 20%;
+    margin-left: 22%;
+}
+.tex1{
+    width: 500px;
+    height: 320px;
+}
+#p0 {text-indent: 2em; }
+p{
+    text-indent: 3em;
+}
+textarea{
+    border: 2px solid #284872;
+    margin-left: 2px solid red;
+}
